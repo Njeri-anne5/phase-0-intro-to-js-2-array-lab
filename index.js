@@ -1,12 +1,12 @@
 
 const cats=["Milo", "Otis", "Garfield"];
 function destructivelyAppendCat(){
-    cats.push('Ralph')
+    cats.push('Ralph')//adds cat at the end
   console.log(cats)
 }
 destructivelyAppendCat()
 
-function destructivelyPrependCat(){
+function destructivelyPrependCat(){//adds Bob to the start of Cat
     cats.unshift('Bob')
     console.log(cats)
 }
@@ -23,6 +23,8 @@ function  destructivelyRemoveFirstCat(){
     console.log(cats)
 }
 destructivelyRemoveFirstCat();
+
+//makes changes without affecting the initial array
 
 function appendCat(name){
     const newArray = cats.slice();
@@ -58,6 +60,4 @@ function  removeFirstCat(){
 removeFirstCat();
 
     
-//cats.unshift();
-//cats.pop();
-//cats.shift();
+
