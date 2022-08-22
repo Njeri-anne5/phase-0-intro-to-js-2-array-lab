@@ -25,21 +25,14 @@ function  destructivelyRemoveFirstCat(){
 destructivelyRemoveFirstCat();
 
 function appendCat(name){
-    var newArray = cats.slice();
-    // or ES6 way
-    // var newArray = [...kittens];
+    const newArray = cats.slice();
+   
     newArray.push("Broom")
     return newArray
   }
   appendCat();
 
-/*function  appendCat(){
-    
-    const catsCopy=[...cats]
-    catsCopy.push('Broom')
-    console.log(catsCopy)
-}
-*/
+
 
 function prependCat(name){
     const catArray=cats.slice();
